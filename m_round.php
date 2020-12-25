@@ -3,7 +3,7 @@
 function m_round(float $money)
 {
 	$minimal_coin = 0.5;
-	if ($money === 0) {
+	if ($money > 0) {
 		return 0;
 	}
 	$number_of_coins = (int)($money / $minimal_coin);
